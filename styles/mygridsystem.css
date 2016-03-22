@@ -20,28 +20,58 @@
 	width; 16.66%;
 	/*-- our gutter--*/
 	padding: 12px;
+	background-color: #ffdcdc;
 }
 
-.col-1{
-	width: 16.66%;
+.col-1{	width: 16.66%;}
+
+.col-2{	width: 33.33%;}
+
+.col-3{	width: 50%;}
+
+.col-4{	width:66.664%;}
+
+.col-5{	width: 83.33%;}
+
+.col-6{	width: 100%;}
+
+.outline, .outline *{
+	outline: 1px solid #f6a1a1;
 }
 
-.col-2{
-	width: 33.33%;
+[class*='col-'] > p{
+	background-color: #ffc2c2;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: white;
 }
 
-.col-3{
-	width: 50%;
+/*-- responsive bits -->
+@media all and (max-width: 800px){
+	.col-1{	width: 16.66%;}
+	.col-2{	width: 33.33%;}
+	.col-3{	width: 50%;}
+	.col-4{	width: 66.664%;}
+	.col-5{	width: 83.33%;}
+	.col-6{	width: 100%;}
+
+	.row .col-2:last-of-type{
+		width: 100%;
+	}
+
+	.row .col-5 ~ .col-1{
+		width: 100%;
+	}
 }
 
-.col-4{
-	width:66.664%;
-}
+@media all and (max-width: 650px){
+	.col-1{	width: 50%;}
+	.col-2{	width: 100%;}
+	.col-3{	width: 100%;}
+	.col-4{	width: 100%;}
+	.col-5{	width: 100%;}
+	.col-6{	width: 100%;}
 
-.col-5{
-	width: 83.33%;
-}
 
-.col-6{
-	width: 100%;
 }
