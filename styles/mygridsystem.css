@@ -58,6 +58,11 @@ h1{
 	font-size: 1.8em;
 	line-height: 2em;
 	text-align: center;
+	text-shadow: 
+	color: ;
+}
+p{
+	font-size: 0.8em;
 }
 
 /*-- responsive bits -->
