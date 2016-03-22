@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Oxygen);
+
 /*-- main container --*/
 .grid-container{
 		width: 100%;
 		max-width: 1200px;
+		line-height: 1.5em;
 	}
 .grid-container *{
 	box-sizing: border-box;
@@ -45,6 +48,16 @@
 	margin: 0;
 	text-align: center;
 	color: white;
+}
+/*-- typography --*/
+body{font-family: 'Oxygen', Arial, sans-serif;}
+
+h1, h2, h3, h4{font-family: 'Oswald', sans-serif;}
+
+h1{
+	font-size: 1.8em;
+	line-height: 2em;
+	text-align: center;
 }
 
 /*-- responsive bits -->
